@@ -14,7 +14,6 @@ public class FileUtil {
         try {
             lines = Files.readAllLines(Paths.get(path), StandardCharsets.UTF_8);
         } catch (IOException e) {
-            //todo 日志记录
             e.printStackTrace();
         }
         return lines;
